@@ -14,3 +14,8 @@ resource "azurerm_storage_account" "storagetest01" {
   account_tier             = "Standard"
   account_replication_type = "LRS"
 }
+
+provider "azurerm" {
+  features {}
+ 
+}
