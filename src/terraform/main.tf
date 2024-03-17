@@ -13,7 +13,7 @@ terraform {
 provider "azurerm" {
   features {}
 
-  resource "azurerm_resource_group" "devops" {
+resource "azurerm_resource_group" "devops" {
   name     = "devops"
   location = "West Europe"
 }
