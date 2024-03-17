@@ -16,9 +16,7 @@ terraform {
    
   }
 }
- tags = {
-    owner = "anjalee"
-  }
+
 provider "azurerm" {
   features {}
  
@@ -29,8 +27,4 @@ resource "azurerm_storage_account" "storagetest01" {
   location                 = azurerm_resource_group.devops.location
   account_tier             = "Standard"
   account_replication_type = "LRS"
-
-  tags = {
-    environment = "Learning"
-  }
 }
